@@ -11,8 +11,6 @@ RSpec.describe Unleash::Strategy::EmailDomain do
     let(:params) { { 'emailDomains' => 'inloco.com.br,inloco.com' } }
 
     context 'when params is invalid' do
-      let(:expected_result) { false }
-
       context 'because it is a string' do
         let(:params) { 'invalid' }
 
@@ -55,8 +53,6 @@ RSpec.describe Unleash::Strategy::EmailDomain do
     end
 
     context 'when context is invalid' do
-      let(:expected_result) { false }
-
       context 'because it is a empty hash' do
         let(:context) { {} }
 

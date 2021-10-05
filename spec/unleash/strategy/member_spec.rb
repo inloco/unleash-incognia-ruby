@@ -11,8 +11,6 @@ RSpec.describe Unleash::Strategy::Member do
     let(:params) { { 'memberIds' => 'user-id-1#1' } }
 
     context 'when params is invalid' do
-      let(:expected_result) { false }
-
       context 'because it is a string' do
         let(:params) { 'invalid' }
 
@@ -55,8 +53,6 @@ RSpec.describe Unleash::Strategy::Member do
     end
 
     context 'when context is invalid' do
-      let(:expected_result) { false }
-
       context 'because it is a empty hash' do
         let(:context) { {} }
 

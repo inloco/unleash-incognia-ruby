@@ -9,8 +9,6 @@ RSpec.describe Unleash::Strategy::Organization do
     let(:params) { { 'organizationIds' => '1' } }
 
     context 'when params is invalid' do
-      let(:expected_result) { false }
-
       context 'because it is a string' do
         let(:params) { 'invalid' }
 
@@ -53,8 +51,6 @@ RSpec.describe Unleash::Strategy::Organization do
     end
 
     context 'when context is invalid' do
-      let(:expected_result) { false }
-
       context 'because it is a empty hash' do
         let(:context) { {} }
 

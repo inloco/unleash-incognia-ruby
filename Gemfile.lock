@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    unleash-incognia (0.1.0)
+    unleash-incognia (0.2.0)
       unleash (~> 3.2)
 
 GEM
